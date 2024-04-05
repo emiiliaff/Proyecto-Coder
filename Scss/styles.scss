@@ -1,1 +1,14 @@
-@import "../Scss/header.scss"
+// variables
+
+$color-header: #ececec;
+$color-texto: black;
+$color-general: #f5f5f5;
+$font-uno: 'Lora', serif;
+$font-dos: 'Hanken Grotesk', sans-serif;
+
+
+@import "../Scss/header.scss";
+
+@import "../Scss/index.scss";
+
+
