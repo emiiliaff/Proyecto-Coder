@@ -120,24 +120,32 @@ main{
 }
 
 section {
-    height: 1800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    height: 900px;
+    
 
-    div {
-        width: 33%;
+    .afiches{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 15px 0;
 
         p{
+            text-align: center;
             color: $color-texto;
             font-family: 'Hanken Grotesk', sans-serif;
             font-size: 25px;
-            font-weight: 600;  
+            font-weight: 600;
+            flex-wrap: wrap;
+            width: 320px;
+            height: 400px;
+            margin: 10px 0;
         }
 
         img{
-            width: 200px;
+            flex-wrap: wrap;
+            width: 320px;
+            height: 400px;
+            margin: 10px 0;
         }
     }
 }

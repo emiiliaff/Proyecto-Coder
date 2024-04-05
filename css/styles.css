@@ -182,23 +182,30 @@ main .portada img {
   }
 }
 section {
-  height: 1800px;
+  height: 900px;
+}
+section .afiches {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin: 15px 0;
 }
-section div {
-  width: 33%;
-}
-section div p {
+section .afiches p {
+  text-align: center;
   color: black;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 25px;
   font-weight: 600;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 400px;
+  margin: 10px 0;
 }
-section div img {
-  width: 200px;
+section .afiches img {
+  flex-wrap: wrap;
+  width: 320px;
+  height: 400px;
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

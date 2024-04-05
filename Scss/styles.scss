@@ -7,9 +7,19 @@ $color-general: #f5f5f5;
 $font-uno: 'Lora', serif;
 $font-dos: 'Hanken Grotesk', sans-serif;
 
-@import "../Scss/header.scss";
+@import "../Scss/_header.scss";
 
-@import "../Scss/index.scss";
+@import "../Scss/_index.scss";
+
+@import "../Scss/fotogaleria.scss";
+
+@import "../Scss/acercade.scss";
+
+@import "../Scss/servicios.scss";
+
+@import "../Scss/contacto.scss";
+
+
 
 
 
