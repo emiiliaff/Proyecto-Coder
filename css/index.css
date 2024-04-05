@@ -1,93 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,900;1,400;1,500&family=Lora:wght@600&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Error: Undefined variable.
+ *     ,
+ * 133 |             color: $color-texto;
+ *     |                    ^^^^^^^^^^^^
+ *     '
+ *   scss\index.scss 133:20  root stylesheet */
 
-main {
-  background-color: #F5F5F5;
-  height: 605px;
-  margin-bottom: 85px;
-  display: flex;
-  justify-content: space-between;
-}
-main .texto {
-  font-family: "Hanken Grotesk", sans-serif;
-  margin-left: 64px;
-}
-main .texto h1 {
-  margin-top: 120px;
-  font-size: 120px;
-  font-weight: 900;
-  height: auto;
-  width: 40%;
-  line-height: 0.85;
-  animation: text-pop-up-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@keyframes text-pop-up-top {
-  0% {
-    transform: translateY(0);
-    transform-origin: 50% 50%;
-    opacity: 0%;
-    text-shadow: none;
-  }
-  50% {
-    opacity: 50%;
-  }
-  100% {
-    transform: translateY(-50px);
-    transform-origin: 50% 50%;
-    opacity: 100%;
-    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-  }
-}
-main .texto h1 span {
-  font-size: 80px;
-}
-main .texto p {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  margin-top: 40px;
-  font-size: 15px;
-  font-weight: 400;
-  height: 40%;
-  width: 400px;
-  top: 550px;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a     \2577 \a 133 \2502              color: $color-texto;\d\a     \2502                     ^^^^^^^^^^^^\a     \2575 \a   scss\\index.scss 133:20  root stylesheet";
 }
-main .portada img {
-  display: block;
-  height: 605px;
-  width: auto;
-}
-
-@media (max-width: 1200px) {
-  main {
-    height: 450px;
-  }
-  main .texto h1 {
-    font-size: 90px;
-    width: 30%;
-  }
-  main .portada img {
-    height: 450px;
-    width: auto;
-  }
-}
-@media (max-width: 820px) {
-  main {
-    height: 450px;
-    justify-content: center;
-    align-items: center;
-  }
-  main .texto h1 {
-    text-align: center;
-  }
-  main .texto p {
-    text-align: center;
-  }
-  main .portada {
-    display: none;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */

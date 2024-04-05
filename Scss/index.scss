@@ -50,6 +50,7 @@ main{
             }
         }
 
+        
         p{
             display: block;
             margin-top: 40px;
@@ -58,8 +59,11 @@ main{
             height: 40%;
             width: 400px;
             top: 550px;
+
         }
+
     }
+
 
     .portada {
 
@@ -115,3 +119,25 @@ main{
     }
 }
 
+section {
+    height: 1800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div {
+        width: 33%;
+
+        p{
+            color: $color-texto;
+            font-family: 'Hanken Grotesk', sans-serif;
+            font-size: 25px;
+            font-weight: 600;  
+        }
+
+        img{
+            width: 200px;
+        }
+    }
+}

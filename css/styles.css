@@ -181,5 +181,24 @@ main .portada img {
     display: none;
   }
 }
+section {
+  height: 1800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section div {
+  width: 25%;
+}
+section div p {
+  color: black;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+section div img {
+  width: 200px;
+}
 
 /*# sourceMappingURL=styles.css.map */
