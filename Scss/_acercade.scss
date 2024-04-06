@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,900;1,400;1,500&family=Lora:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: $color-general;
+    height: 800px;
+
+    h1{
+        margin-left: 64px;
+        font-size: 120px;
+        font-family: $font-uno;
+        font-weight: 900;
+    }
+
+    p{
+        margin-top: 50px;
+        margin-left: 450px;
+        margin-right: 50px;
+        font-size: 20px;
+        font-family: $font-dos;
+        font-weight: 400;
+    }
+}
