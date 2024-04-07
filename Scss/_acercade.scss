@@ -6,13 +6,13 @@
     box-sizing: border-box;
 }
 
-section {
+.sectionAD {
     background-color: $color-general;
     height: 800px;
 
     h1{
-        margin-left: 64px;
-        font-size: 120px;
+        margin-left: 60px;
+        font-size: 110px;
         font-family: $font-uno;
         font-weight: 900;
     }
@@ -24,5 +24,97 @@ section {
         font-size: 20px;
         font-family: $font-dos;
         font-weight: 400;
+    }
+}
+
+.carrusel {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 48px;
+        font-family: $font-uno;
+        font-weight: 700; 
+        margin-bottom: 10px; 
+    }
+
+    .contenedor {
+        height: 600px;
+        width: 600px;
+        background-color: $color-header;
+        border-radius: 10px;
+        box-shadow: 5px rgba(44, 44, 44, 0.792);
+
+
+    .carousel{
+        height: 500px;
+        width: 500px;
+        margin: 30px;
+        align-items: center;
+        padding: 50px;
+
+        h5 {
+            font-family: $font-dos;
+            margin-bottom: 100px;
+        }
+    }  
+} 
+
+}
+
+@media (max-width: 1000px) {
+    .sectionAD {
+       
+        height: 800px;
+    
+        h1{
+            margin-left: 20px;
+            font-size: 90px;
+          
+        }
+    
+        p{
+            
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .sectionAD {
+       
+        height: 800px;
+    
+        h1{
+            margin-left: 20px;
+            font-size: 90px;
+          
+        }
+    
+        p{
+            
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .sectionAD {
+       
+        height: 800px;
+    
+        h1{
+            margin-left: 20px;
+            font-size: 90px;
+          
+        }
+    
+        p{
+            font-size: 15px;
+            margin-left: 20px;
+        }
     }
 }

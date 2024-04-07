@@ -24,8 +24,11 @@ main{
             height: auto;
             width: 40%;
             line-height: 0.85; 
-            animation: text-pop-up-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
 
+            &:hover{
+            animation: text-pop-up-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            color: $color-header;
             @keyframes text-pop-up-top {
                 0% {
                     transform: translateY(0);
@@ -43,6 +46,7 @@ main{
                     text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
                 }
               }
+            }
               
 
             span {
@@ -109,9 +113,7 @@ main{
             h1{
                 text-align: center;
             }
-            p {
-                text-align: center;
-            }
+            
         }
         .portada {
             display: none;
@@ -119,8 +121,8 @@ main{
     }
 }
 
-section {
-    height: 900px;
+.secI {
+    height: 800px;
     
 
     .afiches{
@@ -129,22 +131,41 @@ section {
         flex-wrap: wrap;
         margin: 15px 0;
 
-        p{
-            text-align: center;
-            color: $color-texto;
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-size: 25px;
-            font-weight: 600;
-            flex-wrap: wrap;
-            width: 320px;
-            height: 400px;
-            margin: 10px 0;
-        }
+        a{
+            text-decoration: none;
+            
+            p{
+                text-align: center;
+                color: $color-texto;
+                font-family: 'Hanken Grotesk', sans-serif;
+                font-size: 25px;
+                font-weight: 600;
+                flex-wrap: wrap;
+                width: 320px;
+                height: 400px;
+                margin: 10px 0;
+            }
 
+            &:after {
+                content: "";
+                position: absolute;
+                background-color: $color-texto;
+                height: 3px;
+                width: 0;
+                margin: 15px 0;
+                bottom: -90px;
+                transition: 0.3s;
+            }
+
+            &:hover:after {
+                width: 320px;
+            }
+
+        }
         img{
             flex-wrap: wrap;
             width: 320px;
-            height: 400px;
+            height: 500px;
             margin: 10px 0;
         }
     }
